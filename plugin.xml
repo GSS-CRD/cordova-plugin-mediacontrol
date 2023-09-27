@@ -19,11 +19,6 @@
 		<framework src="AudioToolbox.framework" />
     </platform>
     <platform name="android">
-        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
-            <activity android:resizeableActivity="true" 
-            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation" 
-            android:launchMode="singleTask"></activity>
-        </edit-config>
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="MediaControls">
                 <param name="android-package" value="com.mediacontrols.MediaControlsPlugin" />
